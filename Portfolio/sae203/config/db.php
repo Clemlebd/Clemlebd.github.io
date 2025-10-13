@@ -1,1 +1,1 @@
-<?php $pdo = new PDO('mysql:host=localhost;dbname=db-lebouc11;charset=utf8', 'usr-lebouc11', 'Hjslocw1RuCu'); ?>
+<?php $pdo = new PDO('mysql:host=localhost;dbname=db-lebouc11;charset=utf8', 'usr-lebouc11', 'dITA-Z+rv0Tc'); ?>
