@@ -28,7 +28,7 @@ html {
 /* Le reste de ton CSS suit ici, sans modification */
 /* Styles généraux */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--bg-color-light);
@@ -210,42 +210,66 @@ nav ul li {
 
 /* Les liens de navigation restent blancs (ou la couleur de votre texte de header/footer) */
 nav a {
-    color: var(--header-footer-text-light); /* Couleur par défaut du texte du header/footer */
+    color: var(--header-footer-text-light);
     text-decoration: none;
-    transition: color 0.3s;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: 
+        color 0.3s ease,
+        background-color 0.3s ease,
+        transform 0.3s ease,
+        border-color 0.3s ease;
 }
 
 body.dark-theme nav a {
-    color: var(--header-footer-text-dark); /* Couleur du texte du header/footer en thème sombre */
+    color: var(--header-footer-text-dark);
+	border: 1px solid white;
 }
 
+
 nav a:hover {
-    text-decoration: underline;
+    background-color: var(--header-footer-text-light);
+    color: var(--header-footer-bg-light);
+    transform: scale(1.1);
+}
+
+body.dark-theme nav a:hover {
+    background-color: var(--header-footer-text-dark);
+    color: var(--header-footer-bg-dark);
 }
 
 /* Bouton de thème */
 #theme-toggle {
     background-color: transparent;
-    color: var(--header-footer-text-light);
-    border: 1px solid var(--header-footer-text-light);
+    color: inherit;
+    border: 1px solid currentColor;
     padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 20px;
-    transition: all 0.3s ease;
+    font: inherit;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
 }
 
 body.dark-theme #theme-toggle {
     color: var(--header-footer-text-dark);
-    border: 1px solid var(--header-footer-text-dark);
+    border: 1px solid white;
 }
 
 #theme-toggle:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--header-footer-text-light);
+    color: var(--header-footer-bg-light);
+    transform: scale(1.1);
 }
 
 body.dark-theme #theme-toggle:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--header-footer-text-dark);
+    color: var(--header-footer-bg-dark);
+    transform: scale(1.1);
 }
 
 
@@ -384,11 +408,17 @@ body.dark-theme .project-card a {
 }
 .project-info{
     padding: 20px;
-    width: 50%;
+    width: 80%;
 }
-#project-detail-hero{
+
+main {
+	margin: 10px;
     padding: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
 }
+
 .project-media{
     padding: 20px;
 }
