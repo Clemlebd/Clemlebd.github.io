@@ -1,0 +1,184 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: beige;
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgb(75, 40, 5);
+    height: 200px;
+    z-index: 1;
+    box-shadow: 0 0 20px 0;
+}
+header a{
+    border-radius: 10px;
+    text-decoration: none;
+    width: 200px;
+    height: 130px;
+    float: left;
+    margin: 30px 132px;
+    background-color: beige;
+    border: solid 5px beige;
+    color: black;
+}
+header a:hover{
+    background-color:  rgb(75, 40, 5);
+    color: beige;
+}
+.tailletxt{
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+}
+#accueil{
+    position: fixed;
+    top: 50px;
+    left:818px;
+    z-index: 2;
+}
+#accueil :hover{
+    opacity: 60%;
+}
+#logo{
+    height: 240px;
+    width: 240px; 
+}
+#carte{
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color:  rgb(161, 98, 36);
+    width: 1870px;
+    margin: 20px;
+    box-shadow: 0 0 10px 0;
+}
+#location{
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color:rgb(161, 98, 36);
+    width: 1880px;
+    margin: 20px;
+    box-shadow: 0 0 10px 0;
+}
+#contact{
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgb(161, 98, 36);
+    width: 1300px;
+    margin: 20px;
+    box-shadow: 0 0 10px 0;
+    clear: both;
+}
+#propos{
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgb(161, 98, 36);
+    width: 1870px;
+    height: 350px;
+    margin: 20px;
+    box-shadow: 0 0 10px 0;
+}
+.droite{
+    float: left;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgb(161, 98, 36);
+    width: 700px;
+    margin: 20px;
+    box-shadow: 0 0 10px 0;
+}
+
+.police{
+    text-align: justify;
+    font-size: 30px;
+    padding: 10px;
+}
+.espace{
+    height: 200px;
+}
+#ancre1{
+    height: 200px;   
+}
+#ancre2{
+    height: 200px;   
+}
+#ancre3{
+    height: 200px;   
+}
+#ancre4{
+    height: 200px;  
+    clear: both; 
+}
+p,h2,h3{
+    color: beige;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+td p{
+    text-align: left;
+    font-size: 40px;
+    padding-right: 80px;
+}
+#menuu,tr,th{
+    border: 1px solid black;
+    color: beige;
+}
+#menuu th{
+    font-size: 50px;
+}
+.taca{
+    height: 400px;
+    width: 500px;
+}
+footer{
+    background-color: rgb(75, 40, 5);
+    height: 150px;
+    z-index: 1;
+    box-shadow: 0 0 10px 0;
+}
+.petit{
+    text-align: justify;
+    font-size: 25px;
+}
+#contact p, h3{
+    text-align: justify;
+}
+#anglvale{
+    text-align: justify;
+    font-size: 30px;
+    padding: 10px;
+}
+#anglhist{
+    text-align: justify;
+    font-size: 30px;
+    padding: 10px;
+}
+.grossmoo{
+    width: 100px;
+    height: auto;
+    margin: 0 40px;
+    transition: width 0.3s ease, height 0.3s ease; /*Pour que le grossissement des drapeaux ne soit pas instantannés*/
+}
+.grossmoo:hover{
+    width: 130px;
+    height:auto;
+}
+iframe{
+    margin: 0 80px;
+}
+#map tr,td{
+    color: beige;
+    
+}
+#map{
+    margin: 0 auto;
+}
+#location p{
+    text-align: left;
+}
